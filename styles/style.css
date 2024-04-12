@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --ightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+}
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.img-omelette{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.principal-card{
+    padding: 20px;
+    font-family: Young Serif, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.main-title{
+        font-family: Young Serif, sans-serif;
+        font-weight: 400;
+        color: var(--DarkCharcoal);
+    } 
+ .paragraph-tips{
+    color: var(--WengeBrown);
+ }
+.secundary-card{
+    background-color: var(--RoseWhite);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+   
+}
+.preparation-time{
+    color: var(--DarkRaspberry);
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+.prep-table{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    padding: 4px;
+    color: var(--WengeBrown);
+}
+th.prep-table.x {
+    padding-right: 100px; 
+}
+
+
+.third-card{
+    padding: 40px;
+    border-bottom: 1px solid var(--Eggshell);
+   
+    padding: 20px;
+    
+    margin: 20px;
+}
+.commom-title{
+    font-family: Young Serif, sans-serif;
+    font-weight: 400;
+    color: var(--Nutmeg);
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+.forth-card{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    border-bottom: 1px solid var(--Eggshell);
+   
+   
+}
+.fifth-card{
+    padding: 40px;
+}
+.margin-black{
+    border-bottom: 1px solid var(--Eggshell);
+    padding: 0;
+    margin: 0;
+
+   
+}
+table {
+    border-spacing: 0;
+}
+ol {
+    counter-reset: item;
+    list-style-type: none;
+}
+
+ol li {
+    counter-increment: item;
+    position: relative;
+}
+
+ol li:before {
+    content: counter(item)".";
+    color: var(--Nutmeg); 
+    position: absolute;
+    left: -1.5em;
+    font-weight: bold;
+}
+@media (min-width: 600px) {
+    .container {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+        max-width: 700px; 
+        margin: 50px auto; 
+        padding: 20px; 
+        background-color: rgb(255, 255, 255); 
+        border-radius: 20px;
+        
+    }
+    body{
+        background-color: var(--Eggshell);
+    }
+    .img-omelette{
+        border-radius: 10px;
+    }
+    .container:hover {
+        transform: scale(1.02); 
+        transition: transform 0.3s ease-in-out; 
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.1); 
+    }
+    th.prep-table.x {
+        padding-right: 350px;
+    }
+    
+}
